@@ -32,18 +32,18 @@ setup(
     python_requires='>=3.8',
 
     install_requires=[
+        'click>=8.1.1',
         'onnx>=1.16.2',
-        'onnx-simplifier>=0.4.36',
-        'onnxruntime>=1.18.1',
-        'onnxruntime-gpu>=1.18.1',
-        'click>=8.1.7',
+        'onnx-simplifier>=0.4.20',
+        'onnxruntime>=1.16.1',
+        # 'onnxruntime-gpu>=1.16.1',
     ],
     # 包含的包和模块
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'show=superJ.onnxkit:onnx_show',
-            'check=superJ.onnxkit:onnx_check',
+            'show=superJ.onnx.onnxkit:onnx_show',
+            'check=superJ.onnx.onnxkit:onnx_check',
         ],
     },
 
